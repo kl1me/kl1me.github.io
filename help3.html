@@ -16,6 +16,18 @@
             align-items: center;
             font-family: Arial, sans-serif;
         }
+        
+        /* Анимация для мигающего текста */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Применение анимации к заголовку */
+        h1 {
+            font-size: 3em; /* Размер текста */
+            animation: blink 1s infinite; /* Продолжительность и бесконечное повторение */
+        }
     </style>
 </head>
 <body background='wall1.jpg'>
